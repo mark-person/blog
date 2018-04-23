@@ -13,7 +13,7 @@ layout: post
 
 Jekyll requires that Markdown files have front matter defined at the top of every file. Front matter is just a set of metadata, delineated by three dashes:
 
-```
+```markdown
 ---
 title: This is my title
 layout: post
