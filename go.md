@@ -4,10 +4,7 @@ word
 
 # 我是一个记事本
 
-First Header | Second Header
------------- | -------------
-
-A | B
+标题1 | 标题2
 -- | --
 E | ddfd
 E | ddfd
