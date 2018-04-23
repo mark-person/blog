@@ -1,6 +1,4 @@
 ---
-title: This is my title
-layout: gfm
 ---
 # pages步骤
 1. 创建一个Repository
