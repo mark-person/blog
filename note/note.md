@@ -1,7 +1,7 @@
 
 # 技术管理
 
-# 约定优于配置
+# 约定优于配置convention over configuration
 
 # test
 001
