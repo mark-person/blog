@@ -7,7 +7,7 @@
 <script src="https://cdn.jsdelivr.net/npm/jquery@1/dist/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/art-template@4.12.2/lib/template-web.js"></script>
 
-<input type="text" id="content" value="我是deng00-2"/>
+<input type="text" id="content" value="我是deng00-33"/>
 
 <button type="button" id="ghsubmitbtn">submit</button>
 
@@ -25,7 +25,7 @@ function requestJSON(url, callback) {
 	  type:"POST",
 	  headers: {
 		Authorization: "token fc4e1429fd2c44d466497ea9db700321b913c4c3",
-		Referer: "https://www.baidu.com/"
+		referer: "https://www.baidu.com/"
 	  },
 	  data: JSON.stringify({
 		body:$("#content").val()
@@ -44,7 +44,7 @@ function requestJSON2(url, callback) {
 	  type:"GET",
 	  headers: {
 		Authorization: "token fc4e1429fd2c44d466497ea9db700321b913c4c3",
-		Referer: "https://www.baidu.com/"
+		referer: "https://www.baidu.com/"
 	  },
 	  url: url,
 	  complete: function(xhr) {
