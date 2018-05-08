@@ -1,4 +1,3 @@
-
 <script>
 //
 
@@ -7,7 +6,7 @@
 <script src="https://cdn.jsdelivr.net/npm/jquery@1/dist/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/art-template@4.12.2/lib/template-web.js"></script>
 
-<input type="text" id="content" value="我是deng009"/>
+<input type="text" id="content" value="我是den-ok001"/>
 
 <button type="button" id="ghsubmitbtn">submit</button>
 
@@ -17,35 +16,13 @@
 
 
 <script>
-function requestJSON(url, callback) {
-	// head 'Authorization: token 5199831f4dd3b79e7c5b7e0ebe75d67aa66e79d4'
-	
-	
-	$.ajax({
-	  type:"POST",
-	  headers: {
-		Authorization: "token fc4e1429fd2c44d466497ea9db700321b913c4c3",
-		Referer: "https://www.baidu.com/"
-	  },
-	  data: JSON.stringify({
-		body:$("#content").val()
-	  }),
-	  url: url,
-	  complete: function(xhr) {
-		callback.call(null, xhr.responseJSON);
-	  }
-	});
-}
+
 
 
 function requestJSON2(url, callback) {
 	
 	$.ajax({
 	  type:"GET",
-	  headers: {
-		Authorization: "token fc4e1429fd2c44d466497ea9db700321b913c4c3",
-		Referer: "https://www.baidu.com/"
-	  },
 	  url: url,
 	  complete: function(xhr) {
 		callback.call(null, xhr.responseJSON);
@@ -90,11 +67,9 @@ $(function(){
 		var commentsUrl = 'https://api.github.com/repos/' + username + '/blog/issues/1/comments' 
 		
 		
+		list();
 		
 		
-		requestJSON(commentsUrl, function(json) {
-			list();
-		});
 		
 	});
 	
@@ -109,23 +84,6 @@ $(function(){
 	{{/each}}
 	
 </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
