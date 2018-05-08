@@ -1,0 +1,92 @@
+<script>
+//
+
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/art-template@4.12.2/lib/template-web.js"></script>
+
+<input type="text" id="content" value="我是deng009"/>
+
+<button type="button" id="ghsubmitbtn">submit</button>
+
+<div id="list">
+
+</div>
+
+
+<script>
+
+
+
+function requestJSON2(url, callback) {
+	
+	$.ajax({
+	  type:"GET",
+	  url: url,
+	  complete: function(xhr) {
+		callback.call(null, xhr.responseJSON);
+	  }
+	});
+}
+
+
+function list() {
+	var username = "mark-person";
+	var commentsUrl = 'https://api.github.com/repos/' + username + '/blog/issues/1/comments' 
+		
+	requestJSON2(commentsUrl, function(json) {
+			//alert(JSON.stringify(json));
+			var html = template("pageTemplate", json);
+			$("#list").html(html);
+			
+			$("#ghsubmitbtn").text("submit");
+			$('#ghsubmitbtn').attr("disabled",false);
+		});
+}
+
+$(function(){
+	
+	
+	$('#ghsubmitbtn').on('click', function(e){
+		$(this).text("loading");
+		$(this).attr("disabled",true);
+		// e.preventDefault();
+		// $('#ghapidata').html('<div id="loader"><img src="css/loader.gif" alt="loading..."></div>');
+		
+		var username = "mark-person";
+		var requri   = 'https://api.github.com/users/'+username;
+		var repouri  = 'https://api.github.com/users/'+username+'/repos';
+		
+		
+		
+		// isssue_comments = POST /repos/:owner/:repo/issues/:number/comments POST
+		//var commentsUrl = 'https://api.github.com/repos/' + username + '/blog/issues/1/comments' 
+		
+		// GET /repos/:owner/:repo/issues/:number/comments GET
+		var commentsUrl = 'https://api.github.com/repos/' + username + '/blog/issues/1/comments' 
+		
+		
+		list();
+		
+		
+		
+	});
+	
+	
+});
+</script>
+
+<script id="pageTemplate" type="text/html">
+
+	{{each}}
+		<tr><td>{{$value.body}}</td></tr>
+	{{/each}}
+	
+</script>
+
+
+
+
+
+
