@@ -6,3 +6,5 @@
 * 千人千面
 
 * 疯狂专注于工作对创业未必有益
+
+* restFull、graphql、jQuery.Deferred() 
