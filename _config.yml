@@ -8,5 +8,5 @@
  theme: jekyll-theme-primer
  gfm_quirks: paragraph_end
  title: Hello
-
-plugins: jemoji
+ plugins:
+  - jemoji
