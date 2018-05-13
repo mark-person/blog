@@ -8,5 +8,5 @@
 # github Keyboard shortcuts 用户体验
 
 > shift + / 可以打开
-> * 文件查看页，按E可以到编辑页
+> * 文件查看页->按E可以到编辑页
 
