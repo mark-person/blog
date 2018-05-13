@@ -13,4 +13,4 @@
 # github emoji 
 > * 灵感的图标 :bulb:  :low_brightness: :high_brightness:
 >  灵感常常来自偶然，意外发现serendipity
-> * 疑问 :question: :one:
+> * 疑问 :question: :one: :mag:
