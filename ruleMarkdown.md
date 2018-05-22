@@ -1,0 +1,72 @@
+```javascript
+
+<script>
+var n = 10;
+var slash = [];
+var x = 0;
+var y = 0;
+for (i = 0; i < n; i++) {
+	var r = "";
+	var t = "2";
+	if (i % 2 != 0) {
+		t = "4";
+	}
+	for (j = 0; j < i + 1; j++) {
+		r += t;
+	}
+	slash[i] = r;
+}
+
+var action = [];
+for (i = 0; i < slash.length; i++) {
+	if (slash[i].substring(0, 1) == 2) {
+		action.push("1");
+	}
+	else {
+		action.push("3");
+	}
+	action.push(slash[i]);
+}
+
+var first = action.join("").substring(0, Math.ceil(n*n/2));
+var last = [];
+for (var i = Math.floor(n*n/2) - 2; i >= 0; i--) {
+	last.push(first.charAt(i));
+}
+
+var action = first + last.join("");
+
+var r = [];
+function right() {x++};
+function leftDown(){x--;y++};
+function down(){y++};
+function rightUp(){x++;y--};
+
+r.push([x,y]);
+for (var i = 0; i < action.length; i++) {
+	console.log(action.charAt(i));
+	if (action.charAt(i) == "1") right();
+	if (action.charAt(i) == "2") leftDown();
+	if (action.charAt(i) == "3") down();
+	if (action.charAt(i) == "4") rightUp();
+	r.push([x,y]);
+}
+
+var rMap = {};
+for (var i = 0; i < r.length; i++) {
+	rMap[r[i] + ""] = (i + 1);
+}
+
+var table = "<table border=1>";
+for (var y = 0; y < n; y++) {
+	table += "<tr>";
+	for (var x = 0; x < n; x++) {
+		var index = [x,y] + "";
+		table += "<td>" + rMap[index] + "</td>";
+	}
+	table += "</tr>";
+}
+table += "</table>";
+document.write(table);
+</script>
+```
