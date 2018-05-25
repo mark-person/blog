@@ -22,4 +22,20 @@
 
 
 # ai速算
-
+```javascript
+<script>
+function getRand(){
+	var s = "";
+	for (var i = 0; i < 200; i++) {
+		s += parseInt(Math.random()*10%2);
+	}
+	return s;
+}
+var my = "10101101100100010101010110010110100101101101011011100101001101110101010101010101100101101010101010110010110100101101101011011010110110101101111001011010010110110101101101010110010110100101101101011011";
+document.write("下面哪一组最可能是假的随机数?<br>");
+document.write("A:" + getRand() + "<br>");
+document.write("B:" + getRand() + "<br>");
+document.write("C:" + my + "<br>");
+document.write("D:" + getRand() + "<br>");
+</script>
+```
