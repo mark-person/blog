@@ -39,3 +39,18 @@ document.write("C:" + my + "<br>");
 document.write("D:" + getRand() + "<br>");
 </script>
 ```
+
+```javascript
+<script>
+var one = 0 + Math.pow(25, 0) + Math.pow(25, 1) + Math.pow(25, 2) + Math.pow(25, 3);
+var two = 1 + Math.pow(25, 0) + Math.pow(25, 1) + Math.pow(25, 2);
+var three = 2 + Math.pow(25, 0) + Math.pow(25, 1);
+var four = 3 + + Math.pow(25, 0);
+var s = "baca";
+var n0 = (s.charCodeAt(0) - 97) * one;
+var n1 = (s.charCodeAt(1) - 97) * two;
+var n2 = (s.charCodeAt(2) - 97) * three;
+var n3 = (s.charCodeAt(3) - 97) * four;
+alert(n0 + n1 + n2 + n3 - 1);
+</script>
+```
