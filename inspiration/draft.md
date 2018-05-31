@@ -54,3 +54,12 @@ var n3 = (s.charCodeAt(3) - 97) * four;
 alert(n0 + n1 + n2 + n3 - 1);
 </script>
 ```
+
+error异常 记得住 为什么要故事
+为什么要实干 理论作用？
+十倍的技术，十倍受益
+不用京东 买iphone8plus
+
+
+
+
