@@ -60,6 +60,8 @@ error异常 记得住 为什么要故事
 十倍的技术，十倍受益
 不用京东 买iphone8plus
 
+# 增量部署
+增量部署漏掉内部类 AccessQueueConsumer$AccessQueueThread.class ;别一个是静态变量java和class也是不对应的
 
 
 
