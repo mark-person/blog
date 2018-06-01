@@ -64,4 +64,7 @@ error异常 记得住 为什么要故事
 增量部署漏掉内部类 AccessQueueConsumer$AccessQueueThread.class ;别一个是静态变量java和class也是不对应的
 
 
+一个人每天给他一块钱，哪天不给了他便会记恨；一个人每天给他一巴掌，哪天不给了便会感激，这是什么心理？
+
+
 
