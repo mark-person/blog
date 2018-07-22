@@ -8,7 +8,8 @@
 * 查询和新增时干掉，修改时留着
 * 记下方便jar备份
 * 整理blog
-* 异步io spring Reactive
+* 异步io spring Reactive Building a Reactive RESTful Web Service
+* Accessing Data Reactively with Redis
 * 
 
 
