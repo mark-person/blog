@@ -12,6 +12,8 @@
 * Accessing Data Reactively with Redis
 *  https://www.jianshu.com/p/1765f658200a
 * Rx的编程模型
+* 闭包，原型
+
 
 
 # thinking
