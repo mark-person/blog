@@ -2,10 +2,6 @@
 # TODO
 * 上传文件
 * 
-* 两机测试
-* 
-* 传参处理，干掉page里无用参数，不能一刀切
-* 查询和新增时干掉，修改时留着
 * 异步io spring Reactive Building a Reactive RESTful Web Service
 * Accessing Data Reactively with Redis
 *  https://www.jianshu.com/p/1765f658200a
